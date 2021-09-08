@@ -1,0 +1,704 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
+    
+    
+      
+        <title>白皮书 - 赛凡链文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.802231af.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="赛凡链文档" class="md-header__button md-logo" aria-label="赛凡链文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            赛凡链文档
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              白皮书
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="赛凡链文档" class="md-nav__button md-logo" aria-label="赛凡链文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    赛凡链文档
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        首页
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%88%90%E4%B8%BA%E5%88%9B%E4%BD%9C%E8%80%85/" class="md-nav__link">
+        成为创作者
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%88%90%E4%B8%BA%E9%AA%8C%E8%AF%81%E4%BA%BA/" class="md-nav__link">
+        成为验证人
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%91%E5%B1%95%E8%B7%AF%E7%BA%BF%E5%9B%BE/" class="md-nav__link">
+        发展路线图
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          白皮书
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        白皮书
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    特点
+  </a>
+  
+    <nav class="md-nav" aria-label="特点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    解化个人化写作的痛点
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    使创作者分配合理科学
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    结构与功能
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    驱动引擎：区块链技术
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    智慧创作辅助模型：数据化应用
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    概念框架：整合的艺术
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    经济
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scifan-token" class="md-nav__link">
+    Scifan Token 分发目标
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scifan-token_1" class="md-nav__link">
+    Scifan Token 经济
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    社区治理
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    路线图
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%8A%80%E6%9C%AF%E6%89%8B%E5%86%8C/" class="md-nav__link">
+        技术手册
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%B4%A1%E7%8C%AE%E6%96%87%E6%A1%A3/" class="md-nav__link">
+        贡献文档
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    特点
+  </a>
+  
+    <nav class="md-nav" aria-label="特点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    解化个人化写作的痛点
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    使创作者分配合理科学
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    结构与功能
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    驱动引擎：区块链技术
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    智慧创作辅助模型：数据化应用
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    概念框架：整合的艺术
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    经济
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scifan-token" class="md-nav__link">
+    Scifan Token 分发目标
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scifan-token_1" class="md-nav__link">
+    Scifan Token 经济
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    社区治理
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    路线图
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="_1">赛凡链白皮书</h1>
+<p>赛凡链Scifanchain是一个科幻产业区块链，一个充满活力的开源的科幻创意社区。它着眼于一个新的文明前景，这个文明视人类为一体，科学理性与道德人文和谐统一，谋求公正，彰显人的尊贵价值，推动未来文明演进。</p>
+<p>赛凡链以Substrate为基础框架，提供一个分布式、开放包容、安全智慧的科幻创作应用链，为创作者和产业从业者提供链上存证、共识、驱动引擎和交易、激励、治理模式，创生并推动独具创意、面向未来的科幻创意产业繁荣发展。</p>
+<p>赛凡链是一个专注于科幻产业的应用型区块链。Sci-fan-chain分别代表science（科学）、fantasy（幻想）和blockchain（区块链）。赛凡链的理念是重塑科幻产业生产关系，让科幻产业价值的创造更加高效，分配更加合理公平，其核心目标在于捕获科幻产业的价值，充分利用新思维、新技术和新的生态建设模式，使创作者、读者、投资者、传播者、运营者之间以前所未有的模式创造性地合作，促进这个产业的高速发展。</p>
+<p>随着全球科技的突飞猛进，面向未来的科幻产业会呈现前所未有的繁荣。很多人都意识到，我们其实已经生活在一个科幻时代。科幻是一个高价值含量、非常有前景的产业。一直以来，科幻电影和文学作品在全球拥有庞大消费市场，近年来中国本土的科幻产业链发展得十分迅束 。中国人口众多，传统行业正在进入衰退，对新兴产业来说，这是良好的机会。人们对新事物怀有极大热情，社会的过剩资源在寻找新的领域，越来越多的目光向科幻产业聚焦。</p>
+<p>赛凡链以最新区块链技术为基础，结合应用层和客户端，打造一个去中心化、开放包容、安全智慧的科幻创作应用链，为充满无限可能的科幻生态注入生机，开创数字艺术的新模式。</p>
+<p>赛凡链服务于科幻产业，主要功能包括数字作品链上存证、IPFS分布存储、协同创作共识、CDE发展驱动引擎、NGL磋商治理模式等，简要概括如下：</p>
+<p>以人的创造劳动为核心来计算价值，链上价值体现的是所有用户的真实创造价值，以区块链Token通证为基础打造作品创作、传播和应用的驱动引擎，为科幻产业注入澎湃动力；
+革新科幻文学的艺术的创作、阅读和传播模式；
+提供一个科学与想象结合的宇宙概念模型框架，为所有用户的协同创作奠定基础；
+全面记录整个创作过程，构成独特的作品区块链基因图谱，使作品在流通中的价值可溯源追踪，科学分配给每个环节的参与者；
+构建基于平衡寻优算法的现代磋商模式（优于议会投票与大众民主）治理社区，构建由共识驱动的发展生态。</p>
+<p>科幻是一个有较高门槛的行业，它需要奇思妙想、先进的技术、多学科融合、不断创新。经过调研我们发现，在整个产业链中居于上游位置的优秀文本作品很稀缺，制约着整个产业的发展。所以在第一个阶段，我们的目标锚定于这一瓶颈，致力于发现、集结一批优秀的科幻作家和爱好者，建立起一个活跃的科幻社区。</p>
+<h2 id="_2">特点</h2>
+<h3 id="_3">解化个人化写作的痛点</h3>
+<ul>
+<li>个人化写作效率低下</li>
+<li>写作条件艰难，得不到支持</li>
+<li>单枪匹马创作，没有协作。好的科幻作品需要多种专业背景知识，现今行业分工越来越细致，个人很难拥有足够的知识结构去完成宏大文明背景的作品，所以需要汇聚各方面人才进行协作。</li>
+</ul>
+<h3 id="_4">使创作者分配合理科学</h3>
+<p>传统的创意作者在产业链中的地位尴尬，流量和知名度主导作者的收益，造成两极分化：知名作者收入颇丰，而普通作者在产业链条中无缘分羹，普通作者的积极性受到很大抑制。</p>
+<p>区块链技术可以使创作者的劳动在链条中得到稳定。</p>
+<h3 id="_5">结构与功能</h3>
+<p>赛凡链以Substrate框架为基础搭建，结构如下图：</p>
+<h2 id="_6">驱动引擎：区块链技术</h2>
+<p>任何事物的发展，都需要动力。如果做一个事情有强大动力，那这件事就容易推进。</p>
+<p>我们都知道，科幻文学作品的写作是一个不容易的事情，需要花费大量的精力，完成一个作品的周期很长，并且充满各种不确定性因素。在作品取得成功之前，作者孤军奋战，很少能得到帮助；在注重流量的、以中心化为特征的互联网中，很多有潜力的作品如果得不到精心包装，会被淹没于信息洪流中，也很难与它的读者相遇。作为一名科幻作者，我深切体会到，科幻作品从开始到完成，这个过程中间有很多价值的东西，在传统出版模式中，它们丝豪不被关注，这些价值通常被忽略和丢弃了。</p>
+<p>赛凡链要把这些作品的价值全部捕获，让它们转变为相应的资源并释放能量，通过区块链的Token经济模型，使创作者在创作的早期阶段就能得到资金支持，使他们能专注于创作。我们通过区块链治理，重塑创作者、投资者、服务者、消费者的身份，建立共识，达成高效率的合作。</p>
+<p>所以，赛凡链的首批用户是一批科幻作家、读者和支持者。作家在赛凡链创作作品，读者和支持者帮助作品的创作和流通，他们付出劳动，得到Token激励。赛凡链采用人的创作来替代算法挖矿，我们深信语言文字、科学和艺术、想象和思考、星空宇宙都饱含价值，而能把它们挖掘出来的是创作者，算法对此无能为力。赛凡链的Token经济建立在人的创造力和劳动的基础上，我们的一系列算法和协议都围绕着创造过程设计，以求合理地表达不同阶段作品的价值。简单来说，我们采用字数为参考来表达作品的数量价值，以品级、成熟度来表示作品的质量价值，数量价值由程序统计给出，而质量价值则由社区通过全员投票来评定。</p>
+<p>听到这里，有朋友可能会产生疑问，这真的可行吗？怎么保证一个人不随意地复制大量垃圾文字恶意抢夺Token呢？怎么保证社区投票能公正反映一个作品的质量呢？</p>
+<p>以上面的两个问题为例。我们为作品设计有时间线、遗忘曲线、成熟度、参与度、引用度等诸多属性，在这些属性的综合作用下，垃圾文字很快会进入警示性的红名单，红名单作品在一个期限内，可由任何其他作者修改以提升质量，Token会按某种比例让渡给修改者。如果到期没有提升到最低水准的话，Token会被没收并燃烧掉，情节恶劣的作者会被处罚。而作品的质量评级中，根据结果会计算出一个公允值，投票者的投票如果趋近该公允值，投票者就可以得到更多的Token奖励，反之则更少。长期、多次远离公允值的投票，会降低该投票人的公信力，进而影响到他投票的权重。我们认为评论、投票、打赏、转发传播等行为都具有价值，都能得到相应的小额Token激励，这样他们就有动力去为作品的质量提升作出贡献。这样，经过一次一次的迭代，好的作品的质量会不断提升，得到更多价值的绑定，而差作品所赚取的Token会被稀释、转移，甚至被燃烧失去价值。</p>
+<p>这两个问题的解决方案表明了我们如何将区块链思维和技术应用在具体的场景中。在这些问题获得解决的前提下，我们可以让赛凡链更有趣。任何人都可以在赛凡链创作自己的故事，但不仅仅如此，我们有更宏伟的目标！赛凡链并不仅仅是一个去中心化的创作社区，一个科幻主题的、区块链化的写作平台。我们是一个与现实世界平行的宇宙，一个来自未来的世界，它本身足够科幻，这样才酷对吧？</p>
+<p>赛凡链上所有作品的价值拥有进入现实世界的渠道。文字作品可以衍生出CG、3D模型、VR、影视作品，可以成为纸质出版物和电子出版物，可以采用订阅的方式直接面对读者在线发行，它们最终都会产生真实价值。当这个链逐渐发展成熟，它会成为整个科幻行业的一个基础设施，各种线下的公司、机构、从业人员，都可以将自己的劳动成果挂载到链上，届时赛凡链捕获的是全部行业的价值，而这些价值真正属于创造它的人，不被任何特权者、财阀或垄断者剥夺。</p>
+<p><img alt="structure" src="/images/value_get.svg" title="技术架构图" /></p>
+<h2 id="_7">智慧创作辅助模型：数据化应用</h2>
+<p>在创作中，我们利用现代的数据处理技术对作品进行管理，进而支持创作。</p>
+<p>协同创作模式在文学历史上曾是主流，只是它自然而然发生，没有被注意到。很多家喻户晓的英雄人物，都不是某一个创造者独立完成的，而是很多人共同参与的结果。赛凡链借助于互联网和区块链技术，将这一模式提炼出来。</p>
+<p>写过长篇小说的作家，其实都应该知道，写小说绝对像搞工程，旷日持久，没日没夜劳作，所谓的才华、灵感只是偶尔来一下，大部分时间都像搬砖门一样码字。有各种各样的作品，有的以结构见长，有的擅于刻画心理，不一而足。写小说不是不需要合作，而是太需要了！</p>
+<p>现代化的程序开发中，代码都是相互依赖的，不同的代码库相互引用，这是最自然不过的事，以github为代表的代码管理模式堪称合作的典范。但在文学创作领域没有这么先进的工具，作品之间相互依赖引用是罕见的。保守的做法应该被革新，作者A塑造了一个非常有趣的英雄人物，作者B想让这个人物出现在他的故事中，这样会给他的故事增色不少，同时，他的故事也是对该英雄人物的延伸和加工，如果处理得当，这是一个两全其美的事，何乐而不为呢？很少有作家这样做，其中很重要的一个原因是缺乏信任。</p>
+<p><img alt="structure" src="/images/structure.png" title="技术架构图" /></p>
+<p>我们知道，区块链技术最重要的价值之一就是解决信任问题，我们设计了一套机制来鼓励合作，比如不只是简单地将Token与作品挂起钩来，而是力图让Token以各种方式促进作品的相互依赖、嵌入和引用，在所有的事务中，都通过Token进行奖励和惩罚，这使得Token不断流通，价值越来越被凸显出来。</p>
+<p>就以上面两个作者来继续举例，作者B要使用作者A的人物，最有效的方式就是在他的作品中直接引入该人物，为此他需要支付给作者A一笔费用，作者A因此获益，而作者B的故事也拥有了英雄人物的基因，他为此拥有了对英雄人物命运的部分处理权限，如果两位作者共同努力，这个英雄人物的形象将在科幻世界里更加丰满，其价值会不断提升，有更多作者愿意引入这个英雄，最终，塑造这个英雄人物的是一个作者群，而不再是某一个人。这个作者群形成一个亚社区，他们以社区模式来对英雄人物进行治理。如果作者群治理不成功，英雄人物的影响力会受到减弱，其价值受损，这是所有的参与作者都不愿看到的，他们必须学会合作，提升自己融入社区的能力。</p>
+<p>赛凡链在应用层，借鉴和引入了以下先进的思想、技术和模式：</p>
+<p>Wiki：
+Git：版本控制和协作；
+NFT：铸造；
+数据分析和人工智能：
+社交：</p>
+<p>我们让整个赛凡链的作品能够互相渗透、融合，构建出一个有完整世界观的宇宙，可以无穷无尽地演化。赛凡链是科幻文学创作上与互联网技术的独特创新，真正体现Web3.0的宏伟愿景。我们相信，在科幻与Web3.0谜一般的基因混合下，令人激动的、前所未有的新事物会被缔造出来。</p>
+<h2 id="_8">概念框架：整合的艺术</h2>
+<p>在科幻作品的创作实践中，非常重要的一个问题是创作者需要花大量时间和精力去解决的，那就是宇宙观、世界观的构建。科幻作品与现实主义作品之间最大的一点不同，是科幻作品需要一个不同于现实世界的虚拟世界，而该虚拟世界需要通过科学的探索和想象来构建，并与现实世界产生映射。</p>
+<p>赛凡链的概念框架设计出来，就是为了满足这一需求。它具有以下特性：</p>
+<p>一个基本的结构，描绘了自洽的宇宙和世界图景，该图景足够宏大，有向外和向内两个维度，向外可以拓展到无限星空，而向内，则深入人类的精神世界，该概念框架提供了一个坚实的基础，基于该框架进行创作，会在艺术、科学、哲学、宗教上进行自然而然的、拥有相当深度和广度的对话、碰撞。
+保持开放和灵活。框架不会限制创作者的想象力，完全可以进行打破，开启新的可能性，而你创造出的新概念，经过积淀和验证，可能会融入到框架中它的一部分。
+概念与社会实在的关系。</p>
+<p>赛凡链的概念框架，是在文学和艺术层面对内容进行概括和抽象的产物。</p>
+<p><img alt="structure" src="/images/DNA.svg" title="DNA" /></p>
+<h2 id="_9">经济</h2>
+<h2 id="scifan-token">Scifan Token 分发目标</h2>
+<ul>
+<li>保证技术开发与运营稳定进行</li>
+<li>鼓励作者创作</li>
+<li>鼓励作者参与社区治理</li>
+</ul>
+<h2 id="scifan-token_1">Scifan Token 经济</h2>
+<p>Scifan Token的经济总量是1亿。Scifan 把 80% 的 Token 分配给用户，团队保留10%的奖励，并使用10%的 Token 用于融资。</p>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>比例</th>
+<th>分发方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>挖矿</td>
+<td>80%</td>
+<td>1. 这部分Token主要与作品相对应，作品越多则解锁的Token越多。作者首先创作出作品，然后根据作品长度和质量进行定价，最后分发Token。2. 作品的定价由两部分构成：系统基础测评、社区质量评审。其中，系统基础测评占20%，核心指标是作品长度或字数；社区质量评审占80% ，核心指标是作品质量。3. 若作品涉及商业运作，则根据各作者拥有的Token分配商业收益。 4. 鼓励创作者参与社区评审和治理。</td>
+</tr>
+<tr>
+<td>私募融资</td>
+<td>10%</td>
+<td>作为Scifan的开发经费。上线后解锁30%，初次解锁后每6个月解锁25%，最后6个月解锁20%。</td>
+</tr>
+<tr>
+<td>团队奖励</td>
+<td>10%</td>
+<td>用于开发与运营团队的激励。这部分Token将在上线后解锁10%，初次解锁后每个月解锁5%。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_10">社区治理</h2>
+<p>区块链为社区治理提供了很好的模式。</p>
+<h2 id="_11">路线图</h2>
+<p><img alt="structure" src="/images/roadmap.svg" title="路线图" /></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../%E5%8F%91%E5%B1%95%E8%B7%AF%E7%BA%BF%E5%9B%BE/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 发展路线图" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              发展路线图
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../%E6%8A%80%E6%9C%AF%E6%89%8B%E5%86%8C/" class="md-footer__link md-footer__link--next" aria-label="Next: 技术手册" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              技术手册
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2021 <a href="http://docs.scifanchain.com">赛凡链</a>.
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.756773cc.min.js"></script>
+      
+    
+  </body>
+</html>

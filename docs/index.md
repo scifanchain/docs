@@ -4,7 +4,7 @@
 
 赛凡链是一个开源的科幻产业区块链项目，如果您愿意参与项目的开发、运维和社区建设等服务，欢迎光临我们[github上的家](https://github.com/scifanchain/web)。
 
-![Logo](../images/logo_new.png)
+![Logo](img/logo_new.png)
 
 ## 文档说明
 
